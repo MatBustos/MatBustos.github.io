@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Mateo Bustos • Deep Space Dev</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
+        <meta property="og:title" content="Mateo Bustos · Portfolio">
+        <meta property="og:description"
+            content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://matbustos.github.io/">
+        <meta property="og:image" content="https://matbustos.github.io/assets/og-image.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mateo Bustos · Portfolio">
+        <meta name="twitter:description"
+            content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
+        <meta name="twitter:image" content="https://matbustos.github.io/assets/og-image.png">
+        <meta name="theme-color" content="#050810">
+
+        <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <script src="./js/i18n.js" defer></script>
+        <script src="./js/script.js" defer></script>
+    </head>
+
+    <body>
+        <a class="skip-link" href="#hero" data-i18n="skip">Saltar al contenido</a>
+        <header class="navbar" id="top">
+            <nav class="navbar__container" aria-label="Navegación principal">
+
+                <a href="#hero" class="navbar__logo">MB</a>
+
+                <ul class="navbar__links" id="nav-links">
+                    <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+                    <li><a href="#academic" data-i18n="nav.academic">Académico</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+                </ul>
+
+                <div class="navbar__actions">
+                    <button type="button" id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+                    <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links"
+                        aria-label="Abrir menú de navegación">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero">
+
+                <p class="hero__eyebrow">
+                    <code>~/portfolio $</code>
+                    <span data-i18n="hero.eyebrow">iniciando presentación...</span>
+                </p>
+
+                <h1 class="hero__title">
+                    <span data-i18n="hero.greeting">Hola, soy</span>
+                    <span class="hero__name">Mateo</span>
+                </h1>
+
+                <p class="hero__typing" aria-hidden="true"><span id="typing">&gt; resolviendo problemas con precisión
+                        orbital...</span><span class="hero__cursor">▍</span></p>
+
+                <p class="hero__subtitle" data-i18n="hero.subtitle">
+                    Programador con foco en algoritmos y resolución de problemas. Bienvenido a mi rincón del cosmos.
+                </p>
+
+                <div class="hero__cta">
+                    <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver proyectos</a>
+                    <a href="https://github.com/matbustos" class="btn btn--secondary" target="_blank"
+                        rel="noopener noreferrer" data-i18n="hero.cta.github">GitHub</a>
+                </div>
+
+            </section>
+
+            <section class="section" id="about">
+
+                <h2 class="section__title" data-i18n="about.title">Sobre mí</h2>
+
+                <p class="about__text" data-i18n="about.p1">
+                    Soy estudiante de Ingeniería en Sistemas de Información y tengo la mala costumbre de preguntarme
+                    cómo
+                    funciona todo. Si algo se puede automatizar, optimizar o programar, probablemente ya se me ocurrió
+                    intentarlo (aunque a veces rompa un par de cosas en el proceso).
+                    Mi hobby favorito es abrir un proyecto pensando “esto es una boludez” y, tres horas después, tener
+                    27
+                    pestañas abiertas de Stack Overflow... digo, documentación oficial.
+                </p>
+
+                <p class="about__text" data-i18n="about.p2">
+                    Trabajo principalmente con C, Python y un poco de SQL, además de estar aprendiendo HTML, CSS y
+                    JavaScript mientras construyo este hermoso portafolio.
+                    Actualmente estoy metiéndome cada vez más en sistemas operativos, backend y proyectos un poco más
+                    interesantes... porque programarlos es bastante más entretenido que escribir la documentación.
+                </p>
+
+                <dl class="about__stats">
+                    <div class="stat">
+                        <dt data-i18n="about.stats.languages">Lenguajes trabajados</dt>
+                        <dd>6</dd>
+                    </div>
+                    <div class="stat">
+                        <dt data-i18n="about.stats.courses">Materias de programación</dt>
+                        <dd>4</dd>
+                    </div>
+                    <div class="stat">
+                        <dt data-i18n="about.stats.years">Años programando</dt>
+                        <dd>2+</dd>
+                    </div>
+                </dl>
+
+            </section>
+
+            <section class="section" id="skills">
+
+                <h2 class="section__title" data-i18n="skills.title">Skills</h2>
+
+                <div class="skills__grid">
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title" data-i18n="skills.languages">Lenguajes de programación</h3>
+                        <ul class="skill-group__list">
+                            <li class="tag" data-i18n="skills.list.python">Python</li>
+                            <li class="tag" data-i18n="skills.list.c">C</li>
+                            <li class="tag" data-i18n="skills.list.sql">SQL</li>
+                            <li class="tag" data-i18n="skills.list.html">HTML</li>
+                            <li class="tag" data-i18n="skills.list.css">CSS</li>
+                            <li class="tag" data-i18n="skills.list.js">JavaScript</li>
+                            <li class="tag" data-i18n="skills.list.haskell">Haskell</li>
+                            <li class="tag" data-i18n="skills.list.prolog">Prolog</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title" data-i18n="skills.algorithms">Algoritmos y estructuras de datos
+                        </h3>
+                        <ul class="skill-group__list">
+                            <li class="tag" data-i18n="skills.list.sorting">Algoritmos de ordenamiento</li>
+                            <li class="tag" data-i18n="skills.list.searching">Algoritmos de búsqueda</li>
+                            <li class="tag" data-i18n="skills.list.graphs">Grafos y algoritmos de grafos</li>
+                            <li class="tag" data-i18n="skills.list.dp">Programación dinámica</li>
+                            <li class="tag" data-i18n="skills.list.trees">Árboles y estructuras jerárquicas</li>
+                            <li class="tag" data-i18n="skills.list.hashing">Tablas hash y hashing</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title" data-i18n="skills.tools">Herramientas y tecnologías</h3>
+                        <ul class="skill-group__list">
+                            <li class="tag" data-i18n="skills.list.git">Git</li>
+                            <li class="tag" data-i18n="skills.list.github">GitHub</li>
+                            <li class="tag" data-i18n="skills.list.linux">Linux</li>
+                            <li class="tag" data-i18n="skills.list.vscode">VS Code</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section" id="projects">
+
+                <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+
+                <div class="projects__filters" role="group" aria-label="Filtrar proyectos">
+                    <button type="button" class="filter-btn filter-btn--active" data-filter="all"
+                        data-i18n="projects.filter.all" aria-pressed="true">Todos</button>
+                    <button type="button" class="filter-btn" data-filter="python" data-i18n="projects.filter.python"
+                        aria-pressed="false">Python</button>
+                    <button type="button" class="filter-btn" data-filter="c" data-i18n="projects.filter.c"
+                        aria-pressed="false">C</button>
+                    <button type="button" class="filter-btn" data-filter="web" data-i18n="projects.filter.web"
+                        aria-pressed="false">Web</button>
+                </div>
+
+                <ul class="projects__grid">
+
+                    <li class="project-card" data-tags="python ml">
+                        <div class="project-card__thumb" aria-hidden="true">01</div>
+                        <h3 class="project-card__title" data-i18n="projects.list.project1.title">Reconocedor de dígitos
+                            manuscritos</h3>
+                        <p class="project-card__description" data-i18n="projects.list.project1.description">
+                            Un modelo de aprendizaje automático que reconoce dígitos manuscritos del 0 al 9 utilizando
+                            la
+                            base de datos MNIST.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Machine Learning</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a class="btn btn--secondary"
+                                href="https://github.com/matbustos/reconocedor-digitos-manuscritos" target="_blank"
+                                rel="noopener noreferrer" data-i18n="projects.viewgithub">Ver en GitHub</a>
+                        </div>
+                    </li>
+
+                    <li class="project-card" data-tags="python">
+                        <div class="project-card__thumb" aria-hidden="true">02</div>
+                        <h3 class="project-card__title">StockFlow</h3>
+                        <p class="project-card__description" data-i18n="projects.p2.desc">
+                            Gestor de inventario para una tienda utilizando Python y Flet.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Flet</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a class="btn btn--secondary" href="https://github.com/matbustos/stockflow" target="_blank"
+                                rel="noopener noreferrer" data-i18n="projects.viewgithub">Ver en GitHub</a>
+                        </div>
+                    </li>
+
+                    <li class="project-card" data-tags="web">
+                        <span class="project-card__badge" data-i18n="projects.badge.example">EJEMPLO</span>
+                        <div class="project-card__thumb" aria-hidden="true">E1</div>
+                        <h3 class="project-card__title" data-i18n="projects.ex1.title">AlgoVisualizer</h3>
+                        <p class="project-card__description" data-i18n="projects.ex1.desc">
+                            Visualizador interactivo de algoritmos de ordenamiento, paso a paso.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">Canvas</li>
+                        </ul>
+                    </li>
+
+                    <li class="project-card" data-tags="c">
+                        <span class="project-card__badge" data-i18n="projects.badge.example">EJEMPLO</span>
+                        <div class="project-card__thumb" aria-hidden="true">E2</div>
+                        <h3 class="project-card__title" data-i18n="projects.ex2.title">Mini Shell</h3>
+                        <p class="project-card__description" data-i18n="projects.ex2.desc">
+                            Implementación de una shell básica en C: parseo de comandos, pipes y procesos.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">C</li>
+                            <li class="tag">Sistemas</li>
+                        </ul>
+                    </li>
+
+                    <li class="project-card" data-tags="python">
+                        <span class="project-card__badge" data-i18n="projects.badge.example">EJEMPLO</span>
+                        <div class="project-card__thumb" aria-hidden="true">E3</div>
+                        <h3 class="project-card__title" data-i18n="projects.ex3.title">PyGraphs</h3>
+                        <p class="project-card__description" data-i18n="projects.ex3.desc">
+                            Librería de grafos con BFS, DFS, Dijkstra y detección de ciclos.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Grafos</li>
+                        </ul>
+                    </li>
+
+                    <li class="project-card" data-tags="python web">
+                        <span class="project-card__badge" data-i18n="projects.badge.example">EJEMPLO</span>
+                        <div class="project-card__thumb" aria-hidden="true">E4</div>
+                        <h3 class="project-card__title" data-i18n="projects.ex4.title">Pathfinder A*</h3>
+                        <p class="project-card__description" data-i18n="projects.ex4.desc">
+                            Visualizador del algoritmo A* encontrando rutas óptimas sobre grillas.
+                        </p>
+                        <ul class="project-card__tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Algoritmos</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="section" id="academic">
+
+                <h2 class="section__title" data-i18n="academic.title">Académico</h2>
+
+                <p class="academic__text" data-i18n="academic.intro">
+                    Mi recorrido por Ingeniería en Sistemas me fue llevando de los fundamentos de la programación a
+                    entender qué pasa detrás del código. Entre trabajos prácticos, proyectos grupales y bastante
+                    debugging, fui descubriendo que disfruto especialmente la parte más técnica de los sistemas.
+                </p>
+
+                <ul class="academic__grid">
+
+                    <li class="academic-card">
+                        <h3 class="academic-card__subject" data-i18n="academic.subject.algorithms">Algoritmos y
+                            Estructuras
+                            de Datos</h3>
+                        <p class="academic-card__desc" data-i18n="academic.subject.algorithms.desc">
+                            Resolución de problemas y manejo de datos mediante estructuras, archivos y algoritmos de
+                            ordenamiento.
+                        </p>
+                        <ul class="academic-card__tags">
+                            <li class="tag">C</li>
+                            <li class="tag">Algoritmos</li>
+                            <li class="tag">Archivos</li>
+                        </ul>
+                    </li>
+
+                    <li class="academic-card">
+                        <h3 class="academic-card__subject" data-i18n="academic.subject.sysl">Sintaxis y Semántica de los
+                            Lenguajes</h3>
+                        <p class="academic-card__desc" data-i18n="academic.subject.sysl.desc">
+                            Análisis de lenguajes, gramáticas y conceptos relacionados con el funcionamiento de
+                            compiladores.
+                        </p>
+                        <ul class="academic-card__tags">
+                            <li class="tag">C</li>
+                            <li class="tag">Gramáticas</li>
+                            <li class="tag">Compiladores</li>
+                        </ul>
+                    </li>
+
+                    <li class="academic-card">
+                        <h3 class="academic-card__subject" data-i18n="academic.subject.os">Sistemas Operativos</h3>
+                        <p class="academic-card__desc" data-i18n="academic.subject.os.desc">
+                            Desarrollo de un sistema distribuido en C, trabajando con procesos, hilos, memoria,
+                            planificación y comunicación mediante sockets.
+                        </p>
+                        <ul class="academic-card__tags">
+                            <li class="tag">C</li>
+                            <li class="tag">Linux</li>
+                            <li class="tag">Sockets</li>
+                            <li class="tag">Threads</li>
+                        </ul>
+                        <div class="academic-card__links">
+                            <a class="btn btn--secondary"
+                                href="https://github.com/matbustos/tp-2026-1c-The-Warriors-of-the-Kernel"
+                                target="_blank" rel="noopener noreferrer" data-i18n="academic.repo">Ver repositorio</a>
+                        </div>
+                    </li>
+
+                    <li class="academic-card">
+                        <h3 class="academic-card__subject" data-i18n="academic.subject.paradigms">Paradigmas de la
+                            Programación</h3>
+                        <p class="academic-card__desc" data-i18n="academic.subject.paradigms.desc">
+                            Estudio y aplicación de los paradigmas funcional, lógico y orientado a objetos, utilizando
+                            Haskell, Prolog y Wollok.
+                        </p>
+                        <ul class="academic-card__tags">
+                            <li class="tag">Haskell</li>
+                            <li class="tag">Prolog</li>
+                            <li class="tag">Wollok</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="section" id="goals">
+
+                <h2 class="section__title" data-i18n="goals.title">Hacia dónde voy</h2>
+
+                <p class="goals__text" data-i18n="goals.intro">
+                    Quiero seguir construyendo cosas que me obliguen a entender cómo funcionan por dentro, mientras
+                    convierto lo que aprendo en proyectos cada vez más completos.
+                </p>
+
+                <div class="goals__grid">
+
+                    <div class="goal-group">
+                        <h3 class="goal-group__title" data-i18n="goals.learn">Competencias que aspiro</h3>
+                        <ul class="goal-group__list">
+                            <li class="goal" data-i18n="goals.item.algorithms">
+                                Mejorar mi resolución de problemas y estructuras de datos mediante práctica constante.
+                            </li>
+                            <li class="goal" data-i18n="goals.item.backend">
+                                Profundizar en desarrollo backend, APIs, bases de datos y arquitectura de aplicaciones.
+                            </li>
+                            <li class="goal" data-i18n="goals.item.systems">
+                                Seguir aprendiendo sobre sistemas operativos, concurrencia y programación de bajo nivel.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="goal-group">
+                        <h3 class="goal-group__title" data-i18n="goals.build">Proyectos que quiero construir</h3>
+                        <ul class="goal-group__list">
+                            <li class="goal" data-i18n="goals.item.blog">
+                                Un blog técnico de aprendizaje constante.
+                            </li>
+                            <li class="goal" data-i18n="goals.item.entrenados">
+                                entrenadOS — proyecto grupal (la-soneta), en construcción.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section" id="contact">
+
+                <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
+
+                <p class="contact__text" data-i18n="contact.intro">
+                    ¿Querés charlar sobre un proyecto, una oportunidad o un problema de código? Escribime.
+                </p>
+
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/xbgljjbp" method="POST">
+
+                    <label for="name" data-i18n="contact.name">Nombre</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+
+                    <label for="email" data-i18n="contact.email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <label for="message" data-i18n="contact.message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Enviar</button>
+
+                    <p class="contact__status" id="form-status" role="status" aria-live="polite"></p>
+
+                </form>
+
+                <ul class="contact__links">
+                    <li><a href="https://github.com/matbustos" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/mateobustos" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://instagram.com/_bustosmateo" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="mailto:bustoss.mateo2@gmail.com">Email</a></li>
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text"><small>
+                    © 2026 Mateo Bustos · <span data-i18n="footer.made">hecho a mano, sin frameworks</span>
+                </small></p>
+            <p class="footer__terminal"><code>&gt; exit 0</code></p>
+        </footer>
+    </body>
+
+</html>

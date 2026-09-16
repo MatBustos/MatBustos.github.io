@@ -1,0 +1,14 @@
+# Archivos temporales de Word (~$*.docx son bloqueos de documento abierto)
+~$*
+
+# Archivos de sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Accesos directos
+*.lnk
