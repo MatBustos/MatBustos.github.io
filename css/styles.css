@@ -2,6 +2,7 @@
     --color-bg: #050810;
     --color-surface: #0D1224;
     --color-primary: #8B5CF6;
+    --color-primary-text: #A78BFA;
     --color-secondary: #38BDF8;
     --color-text: #F1F5F9;
     --color-muted: #94A3B8;
@@ -118,7 +119,7 @@ h3 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
 }
 
 h2 {
@@ -137,7 +138,7 @@ code {
     display: inline-block;
     padding: var(--space-xs) var(--space-s);
     background: rgba(139, 92, 246, 0.15);
-    color: var(--color-primary);
+    color: var(--color-primary-text);
     border-radius: 999px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -150,6 +151,7 @@ code {
     border-radius: var(--radius-btn);
     font-family: var(--font-body);
     font-weight: 600;
+    font-size: 0.875rem;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -162,7 +164,8 @@ code {
 }
 
 .btn--primary:hover {
-    background: #a78bfa
+    background: var(--color-primary-text);
+    color: var(--color-primary);
 }
 
 .btn--secondary {
@@ -479,14 +482,6 @@ code {
     margin-bottom: var(--space-s);
 }
 
-.academic-card__links {
-    margin-top: auto;
-}
-
-.academic-card__links .btn {
-    font-size: 0.875rem;
-}
-
 .goals__text {
     max-width: 720px;
     margin: 0 auto var(--space-xl);
@@ -728,5 +723,19 @@ body::before {
 
     to {
         background-position: 100px 50px;
+    }
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero__cursor,
+    body::before {
+        animation: none;
     }
 }

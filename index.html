@@ -2,9 +2,8 @@
 <html lang="es">
 
     <head>
-        <title>Mateo Bustos • Deep Space Dev</title>
-
         <meta charset="UTF-8">
+        <title>Mateo Bustos • Deep Space Dev</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
             content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
@@ -22,13 +21,12 @@
         <meta name="theme-color" content="#050810">
 
         <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
-
+        <link rel="canonical" href="https://matbustos.github.io/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
             rel="stylesheet">
-
         <link rel="stylesheet" href="./css/styles.css">
 
         <script src="./js/i18n.js" defer></script>
@@ -51,7 +49,8 @@
                 </ul>
 
                 <div class="navbar__actions">
-                    <button type="button" id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+                    <button type="button" id="lang-toggle" aria-label="Cambiar a inglés"
+                        aria-pressed="false">EN</button>
                     <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links"
                         aria-label="Abrir menú de navegación">
                         <span></span>
@@ -421,7 +420,7 @@
                     <input type="email" id="email" name="email" required autocomplete="email">
 
                     <label for="message" data-i18n="contact.message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
 
                     <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Enviar</button>
 
