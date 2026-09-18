@@ -937,6 +937,17 @@ button:focus-visible {
 
     .hero__cursor {
         animation: none;
+        opacity: 0.6;
+    }
+
+    .skill-group__list .tag {
+        transition: opacity 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .skill-group__list:hover .tag,
+    .skill-group__list .tag:hover {
+        transform: none;
     }
 
     .hero__name {
@@ -975,4 +986,16 @@ button:focus-visible {
 .paused,
 .paused * {
     animation-play-state: paused !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
