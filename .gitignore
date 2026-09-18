@@ -1,5 +1,6 @@
 # Archivos temporales de Word (~$*.docx son bloqueos de documento abierto)
 ~$*
+*.docx
 
 # Archivos de sistema operativo
 Thumbs.db
