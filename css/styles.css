@@ -43,6 +43,10 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
+}
+
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -506,7 +510,7 @@ code {
 
 .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: var(--space-m);
     list-style: none;
 }
@@ -870,4 +874,16 @@ button:focus-visible {
     .skill-group__list .tag:hover {
         transform: none;
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

@@ -21,7 +21,7 @@
         <meta name="theme-color" content="#050810">
 
         <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
-        <link rel="canonical" href="https://matbustos.github.io/">
+        <link rel="canonical" href="https://matbustos.github.io/deep-space-dev/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -39,7 +39,7 @@
             <nav class="navbar__container" aria-label="Navegación principal">
 
                 <a href="#" class="navbar__logo" aria-label="Volver al inicio">MB</a>
-                
+
                 <ul class="navbar__links" id="nav-links">
                     <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
                     <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
@@ -409,14 +409,19 @@
                 <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
 
                 <p class="contact__text" data-i18n="contact.intro">
-                    ¿Querés charlar sobre un proyecto, una oportunidad o tienes alguna sugerencia para mejorar este
+                    ¿Querés charlar sobre un proyecto, una oportunidad o tenés alguna sugerencia para mejorar este
                     sitio web? Escribime.
                 </p>
 
                 <form class="contact__form" id="contact-form" action="https://formspree.io/f/xbgljjbp" method="POST">
 
+                    <label for="name" class="sr-only">Nombre</label>
                     <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
+
+                    <label for="email" class="sr-only">Email</label>
                     <input type="email" id="email" name="email" required autocomplete="email" placeholder="Tu email">
+
+                    <label for="message" class="sr-only">Mensaje</label>
                     <textarea id="message" name="message" rows="5" required maxlength="500"
                         placeholder="Escribe tu mensaje aquí..."></textarea>
 
