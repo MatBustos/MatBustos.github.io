@@ -971,3 +971,8 @@ button:focus-visible {
     white-space: nowrap;
     border: 0;
 }
+
+.paused,
+.paused * {
+    animation-play-state: paused !important;
+}

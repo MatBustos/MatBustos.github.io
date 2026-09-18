@@ -38,7 +38,7 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
-    formStatus.textContent = ''; // limpia mensaje de un intento anterior
+    formStatus.textContent = '';
 
     const data = new FormData(form);
     try {
@@ -59,3 +59,12 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
+const animatedElements = document.querySelectorAll('.hero__name, .hero__cursor, .hero');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('paused', !entry.isIntersecting);
+    });
+}, { threshold: 0 });
+
+animatedElements.forEach(el => observer.observe(el));
