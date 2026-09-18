@@ -375,25 +375,69 @@ code {
     margin-bottom: var(--space-s);
 }
 
-@keyframes neon-flicker {
-
-    0%,
-    100% {
-        text-shadow: 0 0 8px var(--color-primary), 0 0 20px var(--color-primary);
-    }
-
-    50% {
-        text-shadow: 0 0 4px var(--color-primary), 0 0 10px var(--color-primary);
-    }
-}
-
 .hero__name {
+    position: relative;
     color: var(--color-primary);
     text-shadow:
         0 0 16px var(--color-primary),
         0 0 64px rgba(139, 92, 246, 0.5),
         0 0 128px rgba(139, 92, 246, 0.25);
-    animation: neon-flicker 3s ease-in-out infinite;
+    animation: neon-flicker 4s ease-in-out infinite;
+}
+
+.hero__name::before,
+.hero__name::after {
+    content: '✦';
+    position: absolute;
+    color: var(--color-primary-text);
+    font-size: 0.6em;
+    text-shadow: 0 0 8px var(--color-primary);
+    animation: sparkle 2.5s ease-in-out infinite;
+}
+
+.hero__name::before {
+    top: -0.3em;
+    right: -0.5em;
+    animation-delay: 1.3s;
+}
+
+.hero__name::after {
+    bottom: -0.2em;
+    left: -0.6em;
+    font-size: 0.4em;
+    animation-delay: 2.6s;
+}
+
+@keyframes neon-flicker {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 16px var(--color-primary),
+            0 0 64px rgba(139, 92, 246, 0.5),
+            0 0 128px rgba(139, 92, 246, 0.25);
+    }
+
+    50% {
+        text-shadow:
+            0 0 10px var(--color-primary),
+            0 0 40px rgba(139, 92, 246, 0.35),
+            0 0 90px rgba(139, 92, 246, 0.15);
+    }
+}
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(180deg);
+    }
 }
 
 .hero__typing {
@@ -788,7 +832,7 @@ code {
     margin-top: var(--space-xs);
 }
 
-.footer__terminal:hover {
+.footer__terminal:hover code {
     color: var(--color-primary);
 }
 
@@ -897,6 +941,14 @@ button:focus-visible {
 
     .hero__name {
         animation: none;
+    }
+
+    .hero__name::before,
+    .hero__name::after,
+    .sparkle {
+        animation: none;
+        opacity: 0.6;
+        /* mostrarlas fijas y tenues en vez de titilando */
     }
 
     .skill-group__list .tag {
