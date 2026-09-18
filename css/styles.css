@@ -256,6 +256,9 @@ code {
 
 .btn--primary:hover {
     color: var(--color-primary);
+    box-shadow:
+        0 0 12px var(--color-primary-text),
+        0 0 30px rgba(139, 92, 246, 0.4);
 }
 
 .btn--secondary::before {
@@ -289,6 +292,8 @@ code {
 .section__title {
     text-align: center;
     margin-bottom: var(--space-xl);
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+
 }
 
 .skip-link {
@@ -370,8 +375,25 @@ code {
     margin-bottom: var(--space-s);
 }
 
+@keyframes neon-flicker {
+
+    0%,
+    100% {
+        text-shadow: 0 0 8px var(--color-primary), 0 0 20px var(--color-primary);
+    }
+
+    50% {
+        text-shadow: 0 0 4px var(--color-primary), 0 0 10px var(--color-primary);
+    }
+}
+
 .hero__name {
     color: var(--color-primary);
+    text-shadow:
+        0 0 16px var(--color-primary),
+        0 0 64px rgba(139, 92, 246, 0.5),
+        0 0 128px rgba(139, 92, 246, 0.25);
+    animation: neon-flicker 3s ease-in-out infinite;
 }
 
 .hero__typing {
@@ -382,6 +404,7 @@ code {
 }
 
 .hero__cursor {
+    text-shadow: 0 0 8px var(--color-secondary);
     animation: blink 1s step-end infinite;
 }
 
@@ -472,7 +495,10 @@ code {
 .skill-group__list .tag:hover {
     opacity: 1;
     transform: scale(1.05);
-    box-shadow: 0 0 12px var(--color-primary);
+    box-shadow:
+        0 0 8px var(--color-primary),
+        0 0 20px rgba(139, 92, 246, 0.6);
+    border-color: var(--color-primary);
 }
 
 .projects__filters {
@@ -762,6 +788,10 @@ code {
     margin-top: var(--space-xs);
 }
 
+.footer__terminal:hover {
+    color: var(--color-primary);
+}
+
 #lang-toggle {
     padding: var(--space-xs) var(--space-s);
     background: transparent;
@@ -862,6 +892,10 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
 
     .hero__cursor {
+        animation: none;
+    }
+
+    .hero__name {
         animation: none;
     }
 
