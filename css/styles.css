@@ -944,11 +944,9 @@ button:focus-visible {
     }
 
     .hero__name::before,
-    .hero__name::after,
-    .sparkle {
+    .hero__name::after {
         animation: none;
         opacity: 0.6;
-        /* mostrarlas fijas y tenues en vez de titilando */
     }
 
     .skill-group__list .tag {
