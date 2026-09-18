@@ -2,9 +2,8 @@
 <html lang="es">
 
     <head>
-        <title>Mateo Bustos • Deep Space Dev</title>
-
         <meta charset="UTF-8">
+        <title>Mateo Bustos • Deep Space Dev</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
             content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
@@ -22,13 +21,12 @@
         <meta name="theme-color" content="#050810">
 
         <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
-
+        <link rel="canonical" href="https://matbustos.github.io/deep-space-dev/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
             rel="stylesheet">
-
         <link rel="stylesheet" href="./css/styles.css">
 
         <script src="./js/i18n.js" defer></script>
@@ -40,7 +38,7 @@
         <header class="navbar" id="top">
             <nav class="navbar__container" aria-label="Navegación principal">
 
-                <a href="#hero" class="navbar__logo">MB</a>
+                <a href="#" class="navbar__logo" aria-label="Volver al inicio">MB</a>
 
                 <ul class="navbar__links" id="nav-links">
                     <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
@@ -51,7 +49,8 @@
                 </ul>
 
                 <div class="navbar__actions">
-                    <button type="button" id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+                    <button type="button" id="lang-toggle" aria-label="Cambiar a inglés"
+                        aria-pressed="false">EN</button>
                     <button type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav-links"
                         aria-label="Abrir menú de navegación">
                         <span></span>
@@ -65,30 +64,32 @@
 
         <main>
             <section id="hero" class="hero">
+                <div class="hero__container">
+                    <p class="hero__eyebrow">
+                        <code>~/portfolio $</code>
+                        <span data-i18n="hero.eyebrow">iniciando presentación...</span>
+                    </p>
 
-                <p class="hero__eyebrow">
-                    <code>~/portfolio $</code>
-                    <span data-i18n="hero.eyebrow">iniciando presentación...</span>
-                </p>
+                    <h1 class="hero__title">
+                        <span data-i18n="hero.greeting">Hola, soy</span>
+                        <span class="hero__name">Mateo</span>
+                    </h1>
 
-                <h1 class="hero__title">
-                    <span data-i18n="hero.greeting">Hola, soy</span>
-                    <span class="hero__name">Mateo</span>
-                </h1>
+                    <p class="hero__typing" aria-hidden="true"><span id="typing" data-i18n="hero.typing">&gt;
+                            resolviendo problemas con
+                            precisión
+                            orbital...</span><span class="hero__cursor">▍</span></p>
 
-                <p class="hero__typing" aria-hidden="true"><span id="typing">&gt; resolviendo problemas con precisión
-                        orbital...</span><span class="hero__cursor">▍</span></p>
+                    <p class="hero__subtitle" data-i18n="hero.subtitle">
+                        Programador con foco en algoritmos y resolución de problemas. Bienvenido a mi rincón del cosmos.
+                    </p>
 
-                <p class="hero__subtitle" data-i18n="hero.subtitle">
-                    Programador con foco en algoritmos y resolución de problemas. Bienvenido a mi rincón del cosmos.
-                </p>
-
-                <div class="hero__cta">
-                    <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver proyectos</a>
-                    <a href="https://github.com/matbustos" class="btn btn--secondary" target="_blank"
-                        rel="noopener noreferrer" data-i18n="hero.cta.github">GitHub</a>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver proyectos</a>
+                        <a href="https://github.com/matbustos" class="btn btn--secondary" target="_blank"
+                            rel="noopener noreferrer" data-i18n="hero.cta.github">GitHub</a>
+                    </div>
                 </div>
-
             </section>
 
             <section class="section" id="about">
@@ -150,6 +151,19 @@
                     </div>
 
                     <div class="skill-group">
+                        <h3 class="skill-group__title" data-i18n="skills.tools">Herramientas y tecnologías</h3>
+                        <ul class="skill-group__list">
+                            <li class="tag" data-i18n="skills.list.git">Git</li>
+                            <li class="tag" data-i18n="skills.list.github">GitHub</li>
+                            <li class="tag" data-i18n="skills.list.linux">Linux</li>
+                            <li class="tag" data-i18n="skills.list.vscode">VS Code</li>
+                            <li class="tag" data-i18n="skills.list.photoshop">Photoshop</li>
+                            <li class="tag" data-i18n="skills.list.sqlserver">Microsoft SQL Server</li>
+                            <li class="tag" data-i18n="skills.list.office">Microsoft Office</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
                         <h3 class="skill-group__title" data-i18n="skills.algorithms">Algoritmos y estructuras de datos
                         </h3>
                         <ul class="skill-group__list">
@@ -162,15 +176,6 @@
                         </ul>
                     </div>
 
-                    <div class="skill-group">
-                        <h3 class="skill-group__title" data-i18n="skills.tools">Herramientas y tecnologías</h3>
-                        <ul class="skill-group__list">
-                            <li class="tag" data-i18n="skills.list.git">Git</li>
-                            <li class="tag" data-i18n="skills.list.github">GitHub</li>
-                            <li class="tag" data-i18n="skills.list.linux">Linux</li>
-                            <li class="tag" data-i18n="skills.list.vscode">VS Code</li>
-                        </ul>
-                    </div>
 
                 </div>
 
@@ -338,11 +343,6 @@
                             <li class="tag">Sockets</li>
                             <li class="tag">Threads</li>
                         </ul>
-                        <div class="academic-card__links">
-                            <a class="btn btn--secondary"
-                                href="https://github.com/matbustos/tp-2026-1c-The-Warriors-of-the-Kernel"
-                                target="_blank" rel="noopener noreferrer" data-i18n="academic.repo">Ver repositorio</a>
-                        </div>
                     </li>
 
                     <li class="academic-card">
@@ -393,7 +393,11 @@
                         <h3 class="goal-group__title" data-i18n="goals.build">Proyectos que quiero construir</h3>
                         <ul class="goal-group__list">
                             <li class="goal" data-i18n="goals.item.blog">
-                                Un blog técnico de aprendizaje constante.
+                                Seguir mejorando este portafolio, sumando proyectos nuevos a medida que los voy
+                                terminando.
+                            </li>
+                            <li class="goal" data-i18n="goals.item.game">
+                                Buffet Albert Einstein - juego de automatización de procesos, en construcción.
                             </li>
                             <li class="goal" data-i18n="goals.item.entrenados">
                                 entrenadOS — proyecto grupal (la-soneta), en construcción.
@@ -410,19 +414,21 @@
                 <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
 
                 <p class="contact__text" data-i18n="contact.intro">
-                    ¿Querés charlar sobre un proyecto, una oportunidad o un problema de código? Escribime.
+                    ¿Querés charlar sobre un proyecto, una oportunidad o tenés alguna sugerencia para mejorar este
+                    sitio web? Escribime.
                 </p>
 
                 <form class="contact__form" id="contact-form" action="https://formspree.io/f/xbgljjbp" method="POST">
 
-                    <label for="name" data-i18n="contact.name">Nombre</label>
-                    <input type="text" id="name" name="name" required autocomplete="name">
+                    <label for="name" class="sr-only">Nombre</label>
+                    <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
 
-                    <label for="email" data-i18n="contact.email">Email</label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="Tu email">
 
-                    <label for="message" data-i18n="contact.message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message" class="sr-only">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required maxlength="500"
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
 
                     <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Enviar</button>
 
