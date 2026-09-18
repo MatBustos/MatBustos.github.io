@@ -11,7 +11,7 @@
         <meta property="og:description"
             content="Programador orientado a la resolución de algoritmos: proyectos, skills y recorrido académico.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://matbustos.github.io/">
+        <meta property="og:url" content="https://matbustos.github.io/deep-space-dev/">
         <meta property="og:image" content="https://matbustos.github.io/assets/og-image.png">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Mateo Bustos · Portfolio">
@@ -38,8 +38,8 @@
         <header class="navbar" id="top">
             <nav class="navbar__container" aria-label="Navegación principal">
 
-                <a href="#hero" class="navbar__logo">MB</a>
-
+                <a href="#" class="navbar__logo" aria-label="Volver al inicio">MB</a>
+                
                 <ul class="navbar__links" id="nav-links">
                     <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
                     <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
@@ -64,30 +64,31 @@
 
         <main>
             <section id="hero" class="hero">
+                <div class="hero__container">
+                    <p class="hero__eyebrow">
+                        <code>~/portfolio $</code>
+                        <span data-i18n="hero.eyebrow">iniciando presentación...</span>
+                    </p>
 
-                <p class="hero__eyebrow">
-                    <code>~/portfolio $</code>
-                    <span data-i18n="hero.eyebrow">iniciando presentación...</span>
-                </p>
+                    <h1 class="hero__title">
+                        <span data-i18n="hero.greeting">Hola, soy</span>
+                        <span class="hero__name">Mateo</span>
+                    </h1>
 
-                <h1 class="hero__title">
-                    <span data-i18n="hero.greeting">Hola, soy</span>
-                    <span class="hero__name">Mateo</span>
-                </h1>
+                    <p class="hero__typing" aria-hidden="true"><span id="typing">&gt; resolviendo problemas con
+                            precisión
+                            orbital...</span><span class="hero__cursor">▍</span></p>
 
-                <p class="hero__typing" aria-hidden="true"><span id="typing">&gt; resolviendo problemas con precisión
-                        orbital...</span><span class="hero__cursor">▍</span></p>
+                    <p class="hero__subtitle" data-i18n="hero.subtitle">
+                        Programador con foco en algoritmos y resolución de problemas. Bienvenido a mi rincón del cosmos.
+                    </p>
 
-                <p class="hero__subtitle" data-i18n="hero.subtitle">
-                    Programador con foco en algoritmos y resolución de problemas. Bienvenido a mi rincón del cosmos.
-                </p>
-
-                <div class="hero__cta">
-                    <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver proyectos</a>
-                    <a href="https://github.com/matbustos" class="btn btn--secondary" target="_blank"
-                        rel="noopener noreferrer" data-i18n="hero.cta.github">GitHub</a>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Ver proyectos</a>
+                        <a href="https://github.com/matbustos" class="btn btn--secondary" target="_blank"
+                            rel="noopener noreferrer" data-i18n="hero.cta.github">GitHub</a>
+                    </div>
                 </div>
-
             </section>
 
             <section class="section" id="about">
@@ -408,19 +409,16 @@
                 <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
 
                 <p class="contact__text" data-i18n="contact.intro">
-                    ¿Querés charlar sobre un proyecto, una oportunidad o un problema de código? Escribime.
+                    ¿Querés charlar sobre un proyecto, una oportunidad o tienes alguna sugerencia para mejorar este
+                    sitio web? Escribime.
                 </p>
 
                 <form class="contact__form" id="contact-form" action="https://formspree.io/f/xbgljjbp" method="POST">
 
-                    <label for="name" data-i18n="contact.name">Nombre</label>
-                    <input type="text" id="name" name="name" required autocomplete="name">
-
-                    <label for="email" data-i18n="contact.email">Email</label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
-
-                    <label for="message" data-i18n="contact.message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
+                    <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="Tu email">
+                    <textarea id="message" name="message" rows="5" required maxlength="500"
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
 
                     <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Enviar</button>
 
